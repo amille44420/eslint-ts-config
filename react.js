@@ -4,5 +4,5 @@ const typescriptOverride = require('./getOverride')({
 
 module.exports = {
     extends: [require.resolve('@amille/eslint-config/react')],
-    override: [typescriptOverride],
+    overrides: [typescriptOverride],
 };
