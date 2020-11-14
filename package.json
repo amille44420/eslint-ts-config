@@ -1,0 +1,51 @@
+{
+  "name": "@amille/eslint-ts-config",
+  "version": "0.0.0-development",
+  "description": "",
+  "repository": "github:amille44420/eslint-ts-config",
+  "bugs": "https://github.com/amille44420/eslint-ts-config/issues",
+  "homepage": "https://github.com/amille44420/eslint-ts-config",
+  "keywords": [
+    "typescript",
+    "eslint",
+    "prettier",
+    "config",
+    "amille"
+  ],
+  "license": "MIT",
+  "author": "Adrien Mille <adrien.mille.aer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "react.js",
+    "prettier.js"
+  ],
+  "dependencies": {
+    "@amille/eslint-config": "^1.4.31",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "commitlint-circle": "^1.0.0",
+    "eslint": "^7.13.0",
+    "prettier": "^2.1.2",
+    "semantic-release": "^17.2.2"
+  },
+  "peerDependencies": {
+    "eslint": "^7.13.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
+  },
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:commit": "commitlint",
+    "lint:commit:ci": "commitlint-circle",
+    "release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
